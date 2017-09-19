@@ -1,22 +1,20 @@
-#Seven segment display with HT16K33 backpack
-Driver for the HT16K33 backpack and 7-segement display from [Adafruit](https://learn.adafruit.com/adafruit-led-backpack/0-dot-56-seven-segment-backpack).
+###Fourteen segment display with HT16K33 backpack
+Forked from Magnus Nordin's seven segment display driver
+Driver for the HT16K33 backpack and 14-segement display from [Adafruit](https://learn.adafruit.com/adafruit-led-backpack/0-54-alphanumeric).
 
 ###Installation
 ```sh
-npm install ht16k33-sevensegment-display
+npm install ht16k33-fourteensegment-display
 ```
 
 ###Example
 ```js
-var SevenSegment = require('ht16k33-sevensegment-display');
+var FourteenSegment = require('ht16k33-fourteensegment-display');
 
-var display = new SevenSegment(0x70, 1);
-display.writeDigit(0, 8);
+var display = new FourteenSegment(0x70, 1);
+display.writeString("Test");
 
 ```
 
 ###Licensing
 MIT
-
-###Copyright
-Magnus Nordin 2016
