@@ -1,10 +1,56 @@
 {
-  "name": "ht16k33-sevensegment-display",
-  "version": "0.1.1",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/MagnusNordin/ht16k33-sevensegment-display.git"
+  "_args": [
+    [
+      {
+        "raw": "ht16k33-fourteensegment-display",
+        "scope": null,
+        "escapedName": "ht16k33-fourteensegment-display",
+        "name": "ht16k33-fourteensegment-display",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/home/pi/ht16k33"
+    ]
+  ],
+  "_from": "ht16k33-fourteensegment-display@latest",
+  "_id": "ht16k33-fourteensegment-display@0.1.1",
+  "_inCache": true,
+  "_location": "/ht16k33-fourteensegment-display",
+  "_nodeVersion": "0.12.2",
+  "_npmOperationalInternal": {
+    "host": "packages-9-west.internal.npmjs.com",
+    "tmp": "tmp/ht16k33-fourteensegment-display-0.1.1.tgz_1454767387528_0.7974070149939507"
+  },
+  "_npmUser": {
+    "name": "magnor",
+    "email": "magnus.nordin@gmail.com"
+  },
+  "_npmVersion": "2.7.4",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "ht16k33-fourteensegment-display",
+    "scope": null,
+    "escapedName": "ht16k33-fourteensegment-display",
+    "name": "ht16k33-fourteensegment-display",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/ht16k33-fourteensegment-display/-/ht16k33-fourteensegment-display-0.1.1.tgz",
+  "_shasum": "fd321b2585c4e973bcb73f5bc4847ed0f7018b44",
+  "_shrinkwrap": null,
+  "_spec": "ht16k33-fourteensegment-display",
+  "_where": "/home/pi/ht16k33",
+  "author": {
+    "name": "Magnus Nordin",
+    "email": "magnus.nordin@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/MagnusNordin/ht16k33-fourteensegment-display/issues"
   },
   "dependencies": {
     "i2c": "^0.2.1",
@@ -12,17 +58,16 @@
     "underscore": "^1.8.3"
   },
   "description": "Driver for the HT16K33 backpack and 7-segement display",
-  "bugs": {
-    "url": "https://github.com/MagnusNordin/ht16k33-sevensegment-display/issues"
-  },
-  "homepage": "https://github.com/MagnusNordin/ht16k33-sevensegment-display",
-  "main": "index.js",
+  "devDependencies": {},
   "directories": {
     "example": "example"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "dist": {
+    "shasum": "fd321b2585c4e973bcb73f5bc4847ed0f7018b44",
+    "tarball": "https://registry.npmjs.org/ht16k33-fourteensegment-display/-/ht16k33-fourteensegment-display-0.1.1.tgz"
   },
+  "gitHead": "3d5a6dcf6e0053ee89b7ae157aeb9efd86b07ec4",
+  "homepage": "https://github.com/MagnusNordin/ht16k33-fourteensegment-display",
   "keywords": [
     "hk16k33",
     "display",
@@ -30,5 +75,23 @@
     "seven-segment",
     "led-backpack"
   ],
-  "author": "Magnus Nordin <magnus.nordin@gmail.com>"
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "magnor",
+      "email": "magnus.nordin@gmail.com"
+    }
+  ],
+  "name": "ht16k33-fourteensegment-display",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MagnusNordin/ht16k33-fourteensegment-display.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.1.1"
 }

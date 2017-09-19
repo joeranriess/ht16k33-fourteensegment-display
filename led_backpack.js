@@ -19,7 +19,7 @@ function LEDBackpack(address, bus) {
     bus = bus || 1 
     this.wire = new i2c(address, {device: '/dev/i2c-' + bus}); // point to your i2c address, debug provides REPL interface
 
-    this.buffer = [0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000 ]
+    this.buffer = [0x0000, 0x0000, 0x0000, 0x0000];
 
     // Turn the oscillator on
     this.wire.writeBytes(REGISTER_SYSTEM_SETUP | 0x01, [0x00], function() {});
@@ -70,7 +70,7 @@ LEDBackpack.prototype.writeDisplay = function() {
 }
 
 LEDBackpack.prototype.clear = function() {
-    this.buffer = [ 0, 0, 0, 0, 0, 0, 0, 0 ]
+    this.buffer = [ 0, 0, 0, 0 ];
     this.writeDisplay();
 }
 
