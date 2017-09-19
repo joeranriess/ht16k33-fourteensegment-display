@@ -1,6 +1,5 @@
 var LEDBackpack = require('./led_backpack');
 
-
 function FourteenSegment(address, bus){
   address = address || 0x70
   bus = bus || 1
@@ -142,18 +141,6 @@ FourteenSegment.prototype.writeRaw = function(charNumber, value){
 
   //Set the appropriate digit
   this.display.setBufferRow(charNumber, value);
-}
-
-FourteenSegment.prototype.setColon = function(state){
-  
-  //Warning: This function assumes that the colon is character '2',
-  //which is the case on 4 char displays, but may need to be modified
-  //if another display type is used
-
-  if (state)
-    this.display.setBufferRow(2, 0xFFFF);
-  else
-    this.display.setBufferRow(2, 0);
 }
 
 FourteenSegment.prototype.clear = function() {
